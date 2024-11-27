@@ -1,3 +1,4 @@
+/* General styles */
 body {
     background-image: url('images/back.jpg');
     background-size: cover;
@@ -19,22 +20,62 @@ body {
 
 .red-area {
     position: absolute;
-    top: 5px; /* Adjust as needed */
-    left: 10px; /* Adjust to match the red circle */
+    top: 5px;
+    left: 10px;
 }
 
 .logo {
-    width: 700px; /* Adjust size as needed */
-    
+    width: 700px; /* Default size for larger screens */
+    max-width: 100%; /* Ensures the logo scales down for smaller screens */
 }
 
 .green-area {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     position: absolute;
-    top: 40%; /* Adjust as needed */
-    right: 5%; /* Adjust to match the green circle */
-    width: 30%; /* Set a width for the paragraph */
+    top: 40%;
+    right: 5%;
+    width: 30%;
     text-align: right;
-    color: black; /* Ensure it's visible on white */
+    color: black;
     font-size: 2em;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .green-area {
+        top: 50%; /* Adjust for smaller screens */
+        right: 5%;
+        width: 50%; /* Allow more space for the paragraph */
+        text-align: center;
+        font-size: 1.5em; /* Smaller font size */
+    }
+
+    .red-area {
+        top: 10px;
+        left: 5px;
+    }
+
+    .logo {
+        width: 100%; /* Make the logo responsive */
+        max-width: 300px; /* Limit the size on smaller devices */
+    }
+}
+
+@media (max-width: 480px) {
+    .green-area {
+        top: 60%;
+        right: 5%;
+        width: 80%;
+        text-align: center;
+        font-size: 1.2em;
+    }
+
+    .logo {
+        width: 100%;
+        max-width: 350px; /* Further limit the size */
+    }
+
+    .marquee {
+        font-size: 0.8em; /* Reduce marquee text size */
+    }
 }
