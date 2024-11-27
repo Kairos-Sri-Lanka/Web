@@ -18,7 +18,6 @@ body {
     margin: 10px 0;
 }
 
-
 .red-areaab {
     position: absolute;
     top: 40%;
@@ -29,7 +28,6 @@ body {
     margin-right: 50%;
 }
 
-
 .green-area {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     position: absolute;
@@ -38,7 +36,8 @@ body {
     width: 30%;
     text-align: right;
     color: black;
-    font-size: 2em;
+    font-size: 1.5em; /* Reduced font size */
+    margin-bottom: 20px; /* Add space between the vision/mission and the footer */
 }
 
 .green-areaab {
@@ -49,7 +48,8 @@ body {
     width: 30%;
     text-align: center;
     color: black;
-    font-size: 2em;
+    font-size: 1.5em; /* Reduced font size */
+    margin-bottom: 20px; /* Add space between the vision/mission and the footer */
 }
 
 /* Adjust navbar to have a higher z-index */
@@ -98,6 +98,7 @@ body {
     margin-right: 20px;
     text-align: right; /* Aligns the second paragraph to the right */
 }
+
 /* Adjust the logo's z-index to be lower than navbar */
 .red-area {
     position: absolute;
@@ -120,7 +121,6 @@ body {
     max-width: 100%;
     z-index: 1; /* Keep the logo behind the navbar */
 }
-
 
 /* Navigation Links */
 .navbar ul {
@@ -145,21 +145,40 @@ body {
 /* Responsive styles */
 @media (max-width: 768px) {
     .green-area {
-        top: 50%; /* Adjust for smaller screens */
+        top: 30%; /* Adjust for smaller screens */
         right: 5%;
-        width: 50%; /* Allow more space for the paragraph */
+        width: 40%; /* Allow more space for the paragraph */
         text-align: center;
-        font-size: 1.5em; /* Smaller font size */
+        font-size: 0.4rem; /* Smaller font size */
+        margin-bottom: 20%; /* Add more space for smaller screens */
+    }
+    .abvission{
+        font-size: 2rem;
     }
 
     .red-area {
-        top: 10px;
-        left: 5px;
+        margin-top: 1%;
+        margin-left: 10px;
+        font-size: 0.2rem;
     }
 
     .logo {
         width: 100%; /* Make the logo responsive */
         max-width: 300px; /* Limit the size on smaller devices */
+    }
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px; /* Stack navbar items vertically */
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar a {
+        font-size: 1.2em; /* Increase the size of links for mobile view */
+    }
+    .ch1
+    {
+        font-size: 4rem;
     }
 }
 
