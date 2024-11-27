@@ -1,5 +1,5 @@
 body {
-    background-image: url('/images/back.jpg'); /* Reference the image file */
+    background-image: url("https://i.ibb.co/mcvM1BD/back.jpg"); /* Reference the image file */
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
