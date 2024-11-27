@@ -1,8 +1,15 @@
+body {
+    background-image: url('/images/back.jpg'); /* Reference the image file */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: azure;
+    text-align: center;
+}
+
 .logo
 {
-  align-items:center;
-}
-body
-{
-  background-color:aqua;
+    width: 250px;
+    height: 200px;
+    margin-top: 20px;
 }
